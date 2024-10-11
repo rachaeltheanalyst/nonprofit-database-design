@@ -13,7 +13,7 @@
  
 3. [Approach](#approach)
 
-4. [Results](#results)
+4. [Implementation](#implementation)
 
 5. [Conclusions](#conclusions) 
 
@@ -23,7 +23,7 @@
 ## 1. Abstract
 [Back to ToC](#toc)
 
-During my 2022 summer internship at ICNA Relief, a non-profit dedicated to aiding the underprivileged and disaster-affected, I identified operational inefficiencies in resource allocation and community outreach. The reliance on registration forms for clients and volunteers, coupled with Excel spreadsheets for tracking inventories and donations, hindered their ability to optimize processes. Armed with my newly acquired knowledge of database systems from class, I resolved to design and implement a comprehensive relational database that could centralize information, allowing for more effective resource allocation and community engagement. To achieve this, I utilized ER diagrams to design a relational database to centralize donor, volunteer, client, inventory, donation, and event data. Applying SQL functionalities, including joins, subqueries, and aggregates, I developed complex queries to identify total donation amounts, top donors, percentage of donations from top donors, and volunteers with the most hours donated per interest. These insights enable ICNA Relief to recognize top contributors, target fundraising efforts to increase contributions, and strategically assign volunteers to areas where their skills and contributions are impactful. Additionally, I implemented triggers for real-time updates of essential inventories during events. These features streamlined ICNA Relief's processes, preventing data loss from outdated tracking methods. This database-driven solution exemplifies a transformative approach, fostering efficient resource allocation and robust community engagement at ICNA Relief, aligning seamlessly with the organization's commitment to making a positive impact.
+During my 2022 summer internship at ICNA Relief, a non-profit dedicated to aiding the underprivileged and disaster-affected, I identified operational inefficiencies in resource allocation and community outreach. The reliance on registration forms for clients and volunteers, coupled with Excel spreadsheets for tracking inventories and donations, hindered their ability to optimize processes. Drawing on my expertise in database systems, I set out to design and implement a comprehensive relational database that centralized information, enabling more efficient resource allocation and fostering stronger community engagement. To achieve this, I utilized ER diagrams to design a relational database to centralize donor, volunteer, client, inventory, donation, and event data. Applying SQL functionalities, including joins, subqueries, and aggregates, I developed complex queries to identify total donation amounts, top donors, percentage of donations from top donors, and volunteers with the most hours donated per interest. These insights enable ICNA Relief to recognize top contributors, target fundraising efforts to increase contributions, and strategically assign volunteers to areas where their skills and contributions are impactful. Additionally, I implemented triggers for real-time updates of essential inventories during events. These features streamlined ICNA Relief's processes, preventing data loss from outdated tracking methods. This database-driven solution exemplifies a transformative approach, fostering efficient resource allocation and robust community engagement at ICNA Relief, aligning seamlessly with the organization's commitment to making a positive impact.
 
 <a name="background"/></a>
 ## 2. Background
@@ -54,22 +54,9 @@ To ensure data integrity and consistency, I incorporated constraints within the 
 
 Throughout the implementation process, I referred to established database design principles outlined in reputable sources such as "Database System Concepts" by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan [3], and "SQL Performance Explained" by Markus Winand [4]. By drawing on these authoritative references, I ensured that the design choices made during implementation align with industry standards and best practices.
 
-<a name="results"/></a>      
-## 4. Results
+<a name="implementation"/></a>      
+## 4. Implementation
 [Back to ToC](#toc)
-
-Throughout the report, we performed multiple tests to answer our research question of “what is the relationship between the price of LEGO sets versus number of pieces and theme?”. 
-For our analysis, we limited our research to the five themes with the highest number of LEGO sets (Star Wars, City, Duplo, Friends, NINJAGO) to save time, but if we had more resources, 
-we could have conducted null hypothesis tests and analyzed the regression table for every theme to get the most accurate results.
-
-First, regression table 3 answers whether there is a relationship between pieces and price. From here, we were able to compare our p-value of 0 with our set alpha value of 0.05 and concluded 
-that there is a relationship between pieces and price of a LEGO set. This makes sense because the more pieces a LEGO set has, the more expensive LEGO will sell it for. While we chose to analyze 
-the Price variable, the Amazon_Price variable often had a slightly lower price. A possible future variation of this experiment could be to use these Amazon prices instead and to compare the results.
-
-Next, the hypothesis test comparing the differences in means between Star Wars and City sets answers whether there is a relationship between price and theme. According to our results, we found no 
-evidence that the mean prices of Star Wars and City themed sets are different. I would expect that Star Wars theme is more expensive than City because Star Wars is more popular, but the findings say 
-otherwise. Regardless of how popular a theme is, they are still the same price as other themes. While this may be true for these themes, we did not run this experiment comparing the average prices of 
-the other themes we looked at. If we had compared LEGO NINJAGO and LEGO Friends sets’ average prices for example, we may have gotten completely different results entirely.   
 
 ### Entity-Relationship (ER) Modeling
 <p align="center">
